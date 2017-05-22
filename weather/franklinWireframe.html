@@ -7,14 +7,15 @@
     <title>Franklin Weather | CIT 230 | Frontend Development</title>
     <meta name="author" content="Hannah Baird">
     <meta name="description" content="Franklin's wireframe converted to basic HTML">
+    <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 
 <body>
     <header>
-        &#9856; &#9861;
-        <h1>Feeling Lucky</h1>
-        <h3>Local Weather</h3>
-        <hr>
+        <div class="title">
+            <h1><span >&#9856;</span><span >&#9861;</span> Feeling Lucky?</h1>
+            <h2>Local Weather</h2>
+        </div>
         <nav>
             <ul>
                 <li><a href="/index.html">Home</a></li>
@@ -26,19 +27,20 @@
         </nav>
     </header>
     <main>
-        <div class="located weather">
+        <div class="locatedWeather">
             <h3>&#9856; Franklin, ID </h3>
             <div>
-                <p>15&#186;</p>
-                <p>&#9728; 17/3</p>
+                <p id="ugh">15&#186;</p>
+                <p>&#9728;</p>
+                <p> 17/3</p>
             </div>
             <p>Sunny</p>
         </div>
-        <div class="current conditions">
+        <div class="currentConditions">
             <h3>&#9856; Current Conditions</h3>
             <div>
                 <h4>Wind </h4>
-                <p>1-5 MPH Southwest
+                <p>1-5 MPH<br>Southwest
                 </p>
             </div>
             <div>
@@ -47,7 +49,7 @@
             </div>
         </div>
 
-        <div class="Hourly forecast">
+        <div class="hourlyForecast">
             <h3>&#9856; Hourly Forecast</h3>
             <div>
                 <ul>
@@ -73,7 +75,7 @@
     </main>
     <footer>
         &copy;2017 Hannah Baird
-        <nav>
+        <nav class="bottomNav">
             <ul>
                 <li><a href="/index.html">Home</a></li>
             </ul>
