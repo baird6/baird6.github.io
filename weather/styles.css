@@ -1,6 +1,6 @@
+@import url('https://fonts.googleapis.com/css?family=Sansita');
 * {
     box-sizing: border-box;    /* changes width property to total width instead of content width */
-
 }
 
 article,
@@ -16,21 +16,23 @@ figure {
 }
 
 body {
-    margin: 0;  /* remove any margin from body to avoid unsightly gaps. */
-    padding: 0;  /* ditto for padding  */
+    margin: 0;
+    padding: 0;
+    font-family: Helvetica, sans-serif;
+    font-size: 20px;
 }
 main {
     display: flex;
     flex-flow: column nowrap;
     align-items: center;
+    background-image: url("images/sunny-winter.jpg");
+    background-size: cover;
 }
 nav ul {
     display: flex;
     justify-content: space-around;
-}
-li {
     list-style-type: none;
-    font-size: 1.1em;
+    font-size: .8em;
 }
 nav {
     position: fixed;
@@ -40,7 +42,7 @@ nav {
 }
 .title h1 + h1 {
     text-align: right;
-    margin-top: -1em;
+    margin-top: -.75em;
 }
 footer {
     margin-bottom: 4em;
@@ -51,7 +53,12 @@ footer {
     flex-flow: row wrap;
 }
 #ugh {
-    min-width: 100%
+    min-width: 100%;
+    font-size: 2em;
+    text-align: center;
+    padding: 0;
+    margin-top: .5em;
+    margin-bottom: -.5em;
 }
 .hourlyForecast {
     display: none;
@@ -59,7 +66,66 @@ footer {
 .bottomNav, div + p {
     display: none;
 }
+
+h4 {
+    text-align: right;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: Sansita, verdana, sans-serif;
+}
+.titleContrast {
+    font-size: 1.2em;
+}
+header, footer, nav {
+    background-color: #A6D8DB
+}
+
+nav a:link {
+    text-decoration: none;
+    color: #47556F;
+}
+nav a:visited {
+    text-decoration: none;
+    color: #4A4653;
+}
+nav a:hover {
+    text-decoration: none;
+    color: #E7EF61;
+}
+nav a:active {
+    text-decoration: none;
+    color: #E7EF61;
+}
+ .currentConditions, .temperatures {
+    background-color: rgba(200,200,200,.6);
+    margin: .2em auto;
+    border: 1px solid;
+    border-radius: 5px;
+    padding-left: 7px;
+}
+.secondDice {
+        transform: rotate(25deg);
+        display: inline-block;
+}
+.currentConditions {
+    width: 350px;
+    height: 200px;
+}
 .currentConditions div {
     display: flex;
     justify-content: space-between;
+    flex-flow: row wrap;
+    margin-top: -1.5em;
 }
+.condition {
+   min-width: 50%;
+}
+#condition {
+    margin-top: 1.5em;
+    min-width: 50%;
+}
+.conditions {
+    margin-top: 0em;
+    min-width: 50%;
+}
+
