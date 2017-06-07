@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Sansita');
 * {
-    box-sizing: border-box;    /* changes width property to total width instead of content width */
+    box-sizing: border-box;
+    /* changes width property to total width instead of content width */
 }
 
 article,
@@ -12,7 +13,8 @@ section,
 main,
 figcaption,
 figure {
-    display: block;   /* just in case we have any older browsers that don't recognize the HTML5 semantic elements */
+    display: block;
+    /* just in case we have any older browsers that don't recognize the HTML5 semantic elements */
 }
 
 body {
@@ -21,6 +23,7 @@ body {
     font-family: Helvetica, sans-serif;
     font-size: 20px;
 }
+
 main {
     display: flex;
     flex-flow: column nowrap;
@@ -28,30 +31,36 @@ main {
     background-image: url("images/sunny-winter.jpg");
     background-size: cover;
 }
+
 nav ul {
     display: flex;
     justify-content: space-around;
     list-style-type: none;
     font-size: .8em;
 }
+
 nav {
     position: fixed;
     bottom: 0;
     left: 0;
     right: 0;
 }
-.title h1 + h1 {
+
+.title h1+h1 {
     text-align: right;
     margin-top: -.75em;
 }
+
 footer {
     margin-bottom: 4em;
 }
+
 .locatedWeather div {
     display: flex;
     justify-content: space-between;
     flex-flow: row wrap;
 }
+
 #ugh {
     min-width: 100%;
     font-size: 2em;
@@ -60,23 +69,36 @@ footer {
     margin-top: .5em;
     margin-bottom: -.5em;
 }
+
 .hourlyForecast {
     display: none;
 }
-.bottomNav, div + p {
+
+.bottomNav,
+div+p {
     display: none;
 }
 
 h4 {
     text-align: right;
 }
-h1, h2, h3, h4, h5, h6 {
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     font-family: Sansita, verdana, sans-serif;
 }
+
 .titleContrast {
     font-size: 1.2em;
 }
-header, footer, nav {
+
+header,
+footer,
+nav {
     background-color: #A6D8DB
 }
 
@@ -84,48 +106,85 @@ nav a:link {
     text-decoration: none;
     color: #47556F;
 }
+
 nav a:visited {
     text-decoration: none;
     color: #4A4653;
 }
+
 nav a:hover {
     text-decoration: none;
     color: #E7EF61;
 }
+
 nav a:active {
     text-decoration: none;
     color: #E7EF61;
 }
- .currentConditions, .temperatures {
-    background-color: rgba(200,200,200,.6);
+
+.currentConditions,
+.temperatures {
+    background-color: rgba(200, 200, 200, .6);
     margin: .2em auto;
     border: 1px solid;
     border-radius: 5px;
     padding-left: 7px;
 }
+
 .secondDice {
-        transform: rotate(25deg);
-        display: inline-block;
+    transform: rotate(25deg);
+    display: inline-block;
 }
+
 .currentConditions {
     width: 350px;
     height: 200px;
 }
+
 .currentConditions div {
     display: flex;
     justify-content: space-between;
     flex-flow: row wrap;
     margin-top: -1.5em;
 }
+
 .condition {
-   min-width: 50%;
+    min-width: 50%;
 }
+
 #condition {
     margin-top: 1.5em;
     min-width: 50%;
 }
+
 .conditions {
     margin-top: 0em;
     min-width: 50%;
 }
 
+@media screen and (min-width: 34em) {
+    .hourlyForecast {
+        display: initial;
+    }
+    .bottomNav,
+    div+p {
+        display: initial;
+    }
+    main {
+        flex-direction: row;
+        align-items: stretch;
+        background: none;
+    }
+    main > div {
+        flex: 1 0 30%;
+    }
+    .locatedWeather {
+        background-image: url("images/sunny-winter.jpg");
+    }
+    .title {
+        width: 20em;
+    }
+    nav {
+        position: static;
+    }
+}

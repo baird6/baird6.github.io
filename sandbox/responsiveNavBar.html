@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Nav Bar | Sandbox </title>
+    <style>
+        body {
+            margin: 0;
+        }
+        nav {
+            display: flex;
+            flex-flow: column;
+        }
+        ul.leftNav, ul.right {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #333;
+            display: flex;
+            flex-flow: column;
+        }
+
+        ul.leftNav li, ul.right li {
+            min-width: 100%
+        }
+
+        ul.leftNav li a, ul.right li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        ul.leftNav li a:hover:not(.active) {
+            background-color: #111;
+        }
+
+        ul.leftNav li a.active {
+            background-color: #4CAF50;
+        }
+
+        ul.right li a:hover:not(.active) {
+            background-color: #111;
+        }
+
+        @media screen and (min-width: 600px) {
+            nav {
+                flex-flow: row;
+                justify-content: space-between;
+                background-color: #333;
+            }
+            ul.leftNav{
+                flex-flow: row
+            }
+            ul.leftNav li {
+                min-width: 30%;
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul class="leftNav">
+                <li><a class="active" href="#home">Home</a></li>
+                <li><a href="#news">News</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <ul class="right">
+                <li><a href="#about">About</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+    <div style="padding:0 16px;">
+        <h2>Responsive leftNav Example</h2>
+        <p>This example use media queries to stack the leftNav vertically when the screen size is 600px or less.</p>
+        <p>You will learn more about media queries and responsive web design later in our CSS Tutorial.</p>
+        <h4>Resize the browser window to see the effect.</h4>
+    </div>
+    </main>
+</body>
+
+</html>
