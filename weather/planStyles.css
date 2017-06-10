@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css?family=Bubbler+One|Lora');
+* {
+    box-sizing: border-box;
+    /* changes width property to total width instead of content width */
+}
+
+article,
+aside,
+footer,
+header,
+nav,
+section,
+main,
+figcaption,
+figure {
+    display: block;
+    /* just in case we have any older browsers that don't recognize the HTML5 semantic elements */
+}
+.body-font {
+    font-family: Lora, Abril, serif;
+}
+.headings-font {
+    font-family: "Bubbler One", "Bradley Hand", fantasy;
+}
+.colors {
+    display: flex;
+    justify-content: space-around;
+    flex-flow: row wrap;
+}
+.color-swatch {
+    border: 1px solid;
+    border-radius: 10px;
+    flex: 0 1 25%;
+}
+.color-swatch__color {
+    width: 100%;
+    height: 80px;
+    border-radius: 10px 10px 0 0;
+}
+.color-swatch__primary {
+    background-color: #658BF3;
+}
+.color-swatch__secondary {
+    background-color: #FFC958;
+}
+.color-swatch__description {
+    padding: .5em;
+}
