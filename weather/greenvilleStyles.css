@@ -1,0 +1,251 @@
+@import url('https://fonts.googleapis.com/css?family=Bubbler+One|Lora');
+
+/*General stuffs*/
+* {
+    box-sizing: border-box;
+    /* changes width property to total width instead of content width */
+}
+
+article,
+aside,
+footer,
+header,
+nav,
+section,
+main,
+figcaption,
+figure {
+    display: block;
+    /* just in case we have any older browsers that don't recognize the HTML5 semantic elements */
+}
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Helvetica, sans-serif;
+    font-size: 20px;
+}
+main {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+}
+/* header layout */
+
+.title {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    padding:.5em;
+}
+.titlePic {
+    height: 90px;
+}
+nav ul {
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+    font-size: .8em;
+    padding: 0;
+    margin-top: -.3em;
+}
+header h1 {
+    margin: 0;
+    padding: 0;
+
+}
+header {
+    margin-bottom: -.85em;
+}
+
+/* first section layout */
+.locatedWeather {
+    display: flex;
+    flex-flow: row wrap;
+    text-align: center;
+    justify-content: center;
+}
+#place {
+    text-align: center;
+}
+.easy {
+    display: flex;
+    justify-content: space-between;
+    min-width: 50%;
+}
+
+.currentConditions div {
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row wrap;
+    margin-top: -1.5em;
+}
+
+.condition {
+    min-width: 50%;
+}
+
+#condition {
+    margin-top: 1.5em;
+    min-width: 50%;
+}
+
+.conditions {
+    margin-top: 0em;
+    min-width: 50%;
+}
+
+/* second section layout */
+.hourlyForecast {
+    display: flex;
+    flex-flow: column nowrap;
+    text-align: center;
+}
+
+div ul {
+    list-style-type: none;
+    display: flex;
+    max-width: 400px;
+    overflow: scroll;
+    font-size: .75em;
+    padding: 0;
+}
+
+.hourlyForecast li {
+    padding: 0em 1em;
+}
+
+/* Header Styles */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Bubbler One", "Bradley Hand", fantasy;
+    color: #FFC958;
+}
+header {
+    background-color: #37929B;
+
+}
+nav a:link {
+    font-family: Lora, Abril, serif;
+    text-decoration: none;
+    color: #FFC958;
+}
+
+nav a:visited {
+    text-decoration: none;
+    color: #FFC958;
+}
+h1 {
+    font-size: 2.55em;
+}
+nav a:hover {
+    text-decoration: none;
+    color: #1A3681;
+}
+
+nav a:active {
+    text-decoration: none;
+    color: #1A3681;
+}
+
+
+/*Top section styles */
+main {
+    background-color: #6449AF;
+    margin-top: 0;
+    font-family: Lora, Abril, serif;
+}
+#ugh {
+    min-width: 100%;
+    font-size: 2em;
+    text-align: center;
+    padding: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+
+}
+.currentConditions {
+    color: black;
+    background-color: rgba(200, 200, 200, .6);
+    margin: .2em auto;
+    border: 1px solid;
+    border-radius: 5px;
+    padding-left: 7px;
+    padding-top: 1em;
+    margin: 0;
+}
+/*Bottom section styles */
+
+
+/*Footer Styles */
+footer {
+    background-color: #37929B;
+    font-family: Lora, Abril, serif;
+    font-size: .6em;
+}
+
+/* Large Screen */
+@media screen and (min-width: 34em) {
+    main {
+        background-image: url("images/clouds.gif");
+        background-size: cover;
+    }
+    .title {
+        width: 20em;
+    }
+    .locatedWeather {
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: space-around;
+        height: 500px;
+        width: 80%;
+    }
+    .easy {
+        margin: 0;
+        width: 45%;
+        min-height: 100%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        align-content: space-between;
+        color: black;
+        background-color:  rgba(100, 73, 175, .6);
+        border: 1px solid;
+        border-radius: 5px;
+        padding-left: 7px;
+        padding-top: 1em;
+    }
+
+    .hourlyForecast {
+        color: black;
+        background-color: rgba(100, 73, 175, .6);
+        border: 1px solid;
+        border-radius: 5px;
+        padding-left: 7px;
+        padding-top: 1em;
+        width: 45%
+    }
+    .currentConditions {
+        color: black;
+        background-color: rgba(100, 73, 175, .6);
+        border: 1px solid;
+        border-radius: 5px;
+        padding-left: 7px;
+        padding-top: 1em;
+        max-width: 45%;
+    }
+    header {
+        display: flex;
+        flex-direction: column;
+    }
+    nav ul {
+        max-width: 500px;
+        margin: auto;
+        margin-bottom: 1em;
+
+    }
+}
+
