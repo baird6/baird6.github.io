@@ -1,0 +1,59 @@
+/* Set Up */
+* {
+    box-sizing: border-box;
+}
+header h2 {
+    margin: auto;
+    width: 6em;
+    text-align: center;
+    color: yellow;
+    font-family: sans-serif;
+}
+header {
+    display: flex;
+    height: 5em;
+    background-color: black;
+}
+
+/* list format */
+#shipList li {
+    height: 4em;
+    min-width: 9em;
+    text-align: center;
+    color: burlywood;
+}
+#shipList a:visited {
+    color: #211551;
+}
+#shipList a:active {
+    color: #211551;
+}
+#shipList a:link {
+    color: #211551;
+}
+#shipList {
+    min-width: 45%
+}
+#shipList {
+    display: flex;
+    flex-flow: row wrap;
+    list-style-type: none;
+    font-size: 1.25em;
+}
+
+/* info format */
+main {
+    display: flex;
+    background-color: #c8102e;
+}
+#moreInfo {
+    display: none;
+    min-width: 45%;
+    color: #211551;
+    font-size: 1.25em;
+
+}
+dl {
+    border: solid #211551;
+    padding: 1em;
+}
