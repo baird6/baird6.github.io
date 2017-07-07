@@ -1,0 +1,93 @@
+<!doctype HTML>
+
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <title>Greenville Weather | CIT 230 | Frontend Development</title>
+        <meta name="author" content="Hannah Baird">
+        <meta name="description" content="Franklin's wireframe converted to basic HTML">
+        <meta name="viewport" content="width=device-width">
+        <link rel="stylesheet" type="text/css" href="greenvilleStyles.css">
+    </head>
+    <!-- *********************************************
+* Who Did You Collaborate With On This Assessment?
+* 1. Hannah Baird
+* 2. Sam Daw
+* 3.
+* 4.
+* 5.
+* ******************************************** -->
+    <body>
+        <header>
+            <div class="title">
+                <img class="titlePic" alt="good weather" src="images/goodWeather.jpg">
+                <h1>Weather or Not</h1>
+                <img class="titlePic" alt="bad weather" src="images/badWeather.png">
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="/index.html">Home</a></li>
+                    <li><a href="#">Franklin</a></li>
+                    <li><a href="#">Springfield</a></li>
+                    <li><a href="#">Greenville</a></li>
+                    <li><a href="#">Search</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <h3 id="place">Greenville, ID </h3>
+            <section class="locatedWeather">
+                <div class="easy">
+                    <div class="temperatures">
+                        <img id="icon" alt="current conditions" src="images/currentConditions.png" width="100px">
+                    </div>
+                    <div class="temperatures">
+                        <p id="ugh">15&#186;</p>
+                        <p id ="summary"></p>
+                    </div>
+                </div>
+                <div class="currentConditions">
+                    <div>
+                        <h4 class="condition">Wind:&emsp;</h4>
+                        <p id="wind">1-5 MP Southwest
+                        </p>
+                        <h4 class="conditions">Precipitation:&emsp;</h4>
+                        <p id="precip"> 0 in</p>
+                    </div>
+                </div>
+                <div class="hourlyForecast">
+
+                    <div>
+                        <ul>
+                            <li>7AM <img alt="current conditions" src="images/currentConditions.png" width="35px"> 67</li>
+                            <li>8AM <img alt="current conditions" src="images/currentConditions.png" width="35px"> 67</li>
+                            <li>9AM <img alt="current conditions" src="images/currentConditions.png" width="35px"> 69</li>
+                            <li>10AM <img alt="current conditions" src="images/currentConditions.png" width="35px"> 69</li>
+                            <li>11AM <img alt="current conditions" src="images/currentConditions.png" width="35px"> 69</li>
+                            <li>12AM <img alt="current conditions" src="images/currentConditions.png" width="35px"> 70</li>
+                            <li>1PM <img alt="current conditions" src="images/currentConditions.png" width="35px"> 69</li>
+                            <li>2PM <img alt="current conditions" src="images/currentConditions.png" width="35px"> 72</li>
+                            <li>3PM <img alt="current conditions" src="images/currentConditions.png" width="35px"> 74</li>
+                            <li>4PM <img alt="current conditions" src="images/currentConditions.png" width="35px"> 77</li>
+                            <li>5PM <img alt="current conditions" src="images/currentConditions.png" width="35px"> 79</li>
+                            <li>6PM <img alt="current conditions" src="images/currentConditions.png" width="35px"> 81</li>
+                            <li>7PM <img alt="current conditions" src="images/currentConditions.png" width="35px"> 84</li>
+                            <li>8PM <img alt="current conditions" src="images/currentConditions.png" width="35px"> 86</li>
+                            <li>9PM <img alt="current conditions" src="images/currentConditions.png" width="35px"> 88</li>
+                            <li>10PM <img alt="current conditions" src="images/currentConditions.png" width="35px"> 90</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer>
+            &copy;2017 Hannah Baird
+
+        </footer>
+        <script src="weather.js"></script>
+    </body>
+
+</html>
+
+

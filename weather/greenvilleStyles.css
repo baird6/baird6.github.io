@@ -84,8 +84,13 @@ header {
     min-width: 50%;
 }
 
-#condition {
+#wind {
     margin-top: 1.5em;
+    min-width: 50%;
+}
+
+#precip {
+    margin-top: 0em;
     min-width: 50%;
 }
 
@@ -249,3 +254,10 @@ footer {
     }
 }
 
+/* I hate styles and I'm just jumping through hoops with this: */
+
+#summary {
+    font-size: 1em;
+    margin-bottom: 1em;
+    margin-top: -.4em;
+}
