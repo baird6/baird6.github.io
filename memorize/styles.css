@@ -1,0 +1,65 @@
+/* General stuffs */
+* {
+    box-sizing: border-box;
+    /* changes width property to total width instead of content width */
+}
+
+article,
+aside,
+footer,
+header,
+nav,
+section,
+main,
+figcaption,
+figure {
+    display: block;
+    /* just in case we have any older browsers that don't recognize the HTML5 semantic elements */
+}
+
+/* Header Layout */
+.mainNav ul {
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+    list-style-type: none;
+    font-size: .8em;
+    padding: 0;
+    align-self: flex-end;
+    margin: 0em;
+}
+.mainNav {
+    padding: .25em;
+
+}
+header {
+    min-height: 200px;
+    display: flex;
+    flex-flow: column;
+    padding: 0em;
+}
+
+#stixQuote {
+    width: 75%;
+    margin: auto;
+    display: block;
+}
+
+
+/* Main Layout */
+
+/* Header Styles */
+header {
+    background-image: url("images/scriptures-480x270-AV080326_cah057.jpg");
+    background-size: cover;
+
+}
+#stixQuote, .mainNav {
+    background-color: rgba(10, 110, 27, .8);
+    color: white;
+}
+
+/* Main Styles */
+
+/* Large Screen */
+
