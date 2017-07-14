@@ -1,40 +1,67 @@
-<!doctype HTML>
-
-<html lang="en">
+<!doctype html>
+<html lang="en-us">
 
 <head>
-    <meta charset="utf-8">
-    <title>Temporary Home Page | baird6github.io </title>
-    <meta name="author" content="Hannah Baird">
+    <meta charset="UTF-8">
+    <title>Page | Website | Keywords</title>
+    <meta name="description" content="Short Description of the page.">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" type="text/css" href="memorize/styles.css">
 </head>
 
-<body>
+<body onload="loader()">
     <header>
-        <h1>My Web Page!</h1>
+        <div id="quote">
+            <p id="stixQuote"></p>
+            <p id="quoteAttribution"></p>
+        </div>
+        <nav class="mainNav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="memorize/dad.html">Dad</a></li>
+                <li><a href="memorize/caleb.html">Caleb</a></li>
+                <li><a href="memorize/hannah.html">Hannah</a></li>
+                <li><a href="memorize/m
+                    mattie.html">Mattie</a></li>
+            </ul>
+        </nav>
     </header>
-    <nav>
-        <ul>
-            <li><a href="/index.html">Home</a></li>
-            <li><a href="/mobile-analysis.html">Mobile Analysis</a></li>
-            <li><a href="/sandbox/poem.html">Poem</a></li>
-            <li><a href="weather/weather-plan.html">Weather Plan</a></li>
-            <li><a href="projectProposal.html">Project Proposal</a></li>
-            <li><a href="weather/franklinWireframe.html">Franklin Wireframe</a></li>
-            <li><a href="/sandbox/responsiveNavBar.html">Responsive Nav Bar activity</a></li>
-            <li><a href="weather/greenville.html">Greenville</a></li>
-            <li><a href="sandbox/chooseYourOwnAdventure.html">Choose Your own Adventure</a></li>
-            <li><a href="jsonweather-html/index.html">Json Weather Seed Code</a></li>
-            <li><a href="weather/index.html">Weather Homepage</a></li>
-        </ul>
-    </nav>
     <main>
-        <h1>Temporary Home Page!</h1>
-        <p>This demonstrates how to make a temporary home page.</p>
+        <section>
+            <h2>Vaughn J FeatherStone</h2>
+            <p>How often did you memorize something for school only to find less than a year later that it was already gone. For instance, in Star Valley, Wy, fifth graders are required to memorize the Gettysburg address, which most of them do. But talk to the sixth graders from the same school and you'll find that they can't recite even three consecutive lines from the address. So, can we truly memorize anything? If so, how?</p>
+            <p>Well, Vaughn J Featherstone came up with a program that is said to make memorization permanent. His program utilizes repetition and reveiw to strengthen neuro pathways till they are as immune to everyday atrophy as the name of your grandmother. This site was created to help facilitate the Vaughn J Featherstone Memorization system.</p>
+            <p>The system is simple:</p>
+            <ul>
+                <li>Memorize 1 scripture a day</li>
+                <li>Review that scripture everyday for a week</li>
+                <li>Review that scripture once a week for a month</li>
+                <li>Review that scripture once a month for a year</li>
+            </ul>
+        </section>
+        <section id="todayScriptures">
+            <h3>Today's scriptures</h3>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="memorize/dad.html">Dad</a></li>
+                    <li><a href="memorize/caleb.html">Caleb</a></li>
+                    <li><a href="memorize/hannah.html">Hannah</a></li>
+                    <li><a href="memorize/mattie.html">Mattie</a></li>
+                </ul>
+            </nav>
+        </section>
+        <script src="memorize/scriptures.js"></script>
     </main>
     <footer>
-        <small>Last Updated: April 29, 2017</small>
+        &copy;2017 Hannah Baird
+        <nav>
+            <ul>
+                <li><a href="temporaryHomepage.html">Homework page</a></li>
+                <li><a href="projectProposal.html">ProjectProposal</a></li>
+            </ul>
+        </nav>
     </footer>
-
 </body>
 
 </html>

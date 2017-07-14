@@ -25,7 +25,6 @@ figure {
     list-style-type: none;
     font-size: .8em;
     padding: 0;
-    align-self: flex-end;
     margin: 0em;
 }
 .mainNav {
@@ -33,20 +32,38 @@ figure {
 
 }
 header {
-    min-height: 200px;
+    min-height: 250px;
     display: flex;
     flex-flow: column;
+    justify-content: space-between;
     padding: 0em;
 }
 
-#stixQuote {
+#quote {
     width: 75%;
     margin: auto;
     display: block;
+    padding-left: 1em;
+    padding-right: 1em;
+    margin-bottom: 2em;
+    margin-top: 2em;
+}
+#quoteAttribution {
+    text-align: center;
 }
 
-
 /* Main Layout */
+main {
+    display: flex;
+    flex-flow: row;
+}
+#todayScriptures {
+    width: 25%;
+    margin-left: 2em;
+    max-height: 250px;
+    padding: 2em;
+}
+
 
 /* Header Styles */
 header {
@@ -54,12 +71,37 @@ header {
     background-size: cover;
 
 }
-#stixQuote, .mainNav {
+#quote, .mainNav {
     background-color: rgba(10, 110, 27, .8);
     color: white;
 }
 
 /* Main Styles */
+#todayScriptures ul {
+    list-style-type: none;
+}
+#todayScriptures {
+    background-color: rgba(10, 110, 27, .8);
+    color: white;
+}
+nav a:link {
+    font-family: Lora, Abril, serif;
+    text-decoration: none;
+    color: #FFC958;
+}
 
+nav a:visited {
+    text-decoration: none;
+    color: #FFC958;
+}
+nav a:hover {
+    text-decoration: none;
+    color: #1A3681;
+}
+
+nav a:active {
+    text-decoration: none;
+    color: #1A3681;
+}
 /* Large Screen */
 
