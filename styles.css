@@ -31,7 +31,7 @@ figure {
     padding: .25em;
 
 }
-header {
+#banner {
     min-height: 250px;
     display: flex;
     flex-flow: column;
@@ -55,34 +55,46 @@ header {
 /* Main Layout */
 main {
     display: flex;
-    flex-flow: row;
+    flex-flow: row wrap;
 }
-#todayScriptures {
-    width: 25%;
+#quickNav {
+    width: 30%;
+    min-width: 150px;
     margin-left: 2em;
-    max-height: 250px;
     padding: 2em;
+    position: fixed;
+    right: 3%;
+    //left: 68%;
+    list-style-type: none;
 }
 
+.scriptures {
+    max-width: 60%;
+}
+.wireFrames {
+    min-width: 100%;
+}
 
 /* Header Styles */
-header {
+#banner {
     background-image: url("images/scriptures-480x270-AV080326_cah057.jpg");
     background-size: cover;
 
 }
-#quote, .mainNav {
+#quote, .mainNav, footer {
     background-color: rgba(10, 110, 27, .8);
     color: white;
 }
 
 /* Main Styles */
-#todayScriptures ul {
+#quickNav ul {
     list-style-type: none;
 }
-#todayScriptures {
+#quickNav {
     background-color: rgba(10, 110, 27, .8);
     color: white;
+    border: 1px solid;
+    border-radius: 10px;
 }
 nav a:link {
     font-family: Lora, Abril, serif;
